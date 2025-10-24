@@ -4049,7 +4049,12 @@ img.u-pull-left {
     margin-bottom : var(--vspace-0_125);
 }
 
-/* base */
+  .contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto; 
+  column-gap: 4rem; 
+}
+
 .contact-links,
 .contact-social {
   font-size: var(--text-md);
@@ -4080,12 +4085,17 @@ img.u-pull-left {
 }
 
 @media (max-width: 640px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    row-gap: var(--vspace-1);
+  }
+
   .contact-links a[href^="mailto"] {
     white-space: normal;
     overflow-wrap: anywhere;
   }
 }
-  
+
 .contact-social {
     list-style  : none;
     margin-left : 0;
