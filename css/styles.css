@@ -4055,6 +4055,13 @@ img.u-pull-left {
   column-gap: 4rem; 
 }
 
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  column-gap: 4rem;
+}
+
+/* text */
 .contact-links,
 .contact-social {
   font-size: var(--text-md);
@@ -4063,11 +4070,17 @@ img.u-pull-left {
   color: var(--color-text-light);
 }
 
+.contact-links,
+.contact-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .contact-links a,
 .contact-social a {
   color: var(--color-text-light);
 }
-
 .contact-links a:focus,
 .contact-links a:hover,
 .contact-social a:focus,
@@ -4084,34 +4097,27 @@ img.u-pull-left {
   white-space: nowrap;
 }
 
+.contact-social li {
+  display: inline;               
+  white-space: nowrap;           
+}
+.contact-social li::after {
+  content: ",\00a0";             
+}
+.contact-social li:last-child::after {
+  content: "";
+}
+
+/* responsive */
 @media (max-width: 640px) {
   .contact-content {
     grid-template-columns: 1fr;
     row-gap: var(--vspace-1);
   }
-
   .contact-links a[href^="mailto"] {
     white-space: normal;
     overflow-wrap: anywhere;
   }
-}
-
-.contact-social {
-    list-style  : none;
-    margin-left : 0;
-}
-
-.contact-social li {
-    display      : inline-block;
-    padding-left : 0;
-}
-
-.contact-social li::after {
-    content : ",  ";
-}
-
-.contact-social li:last-child::after {
-    display : none;
 }
 
 .contact-btn {
