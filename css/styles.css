@@ -3430,19 +3430,20 @@ img.u-pull-left {
     padding-top : calc(6 * var(--space));
 }
 
+.about-expertise {
+    padding-top: calc(6 * var(--space));
+}
+
 .about-expertise .skills-list {
-    list-style  : none;
-    margin-top  : var(--vspace-1);
-    margin-left : 0;
+    list-style: none;
+    margin-top: var(--vspace-1);
+    margin-left: 0;
+    padding: 0;
 }
 
 .about-expertise .skills-list li {
-    display      : inline-block;
-    padding-left : 0;
-}
-
-.about-expertise .skills-list li:not(:last-child)::after {
-    content : ", ";
+    display: block; 
+    margin-bottom: 8px;
 }
 
 /* --------------------------------------------------------------------
