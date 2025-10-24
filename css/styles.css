@@ -4049,26 +4049,43 @@ img.u-pull-left {
     margin-bottom : var(--vspace-0_125);
 }
 
+/* base */
 .contact-links,
 .contact-social {
-    font-size   : var(--text-md);
-    font-weight : 300;
-    line-height : var(--vspace-2);
-    color       : var(--color-text-light);
+  font-size: var(--text-md);
+  font-weight: 200;
+  line-height: var(--vspace-2);
+  color: var(--color-text-light);
 }
 
 .contact-links a,
 .contact-social a {
-    color : var(--color-text-light);
+  color: var(--color-text-light);
 }
 
 .contact-links a:focus,
 .contact-links a:hover,
 .contact-social a:focus,
 .contact-social a:hover {
-    color : var(--color-1);
+  color: var(--color-1);
 }
 
+.contact-links li,
+.contact-social li {
+  margin-bottom: var(--vspace-0_5);
+}
+
+.contact-links a[href^="mailto"] {
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .contact-links a[href^="mailto"] {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+  
 .contact-social {
     list-style  : none;
     margin-left : 0;
