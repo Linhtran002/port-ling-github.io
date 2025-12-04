@@ -1,66 +1,35 @@
-
 <script>
-  if (window.location.hostname === "www.lingdev.io.vn") {
-    window.location.href = "https://lingdev.io.vn" + window.location.pathname;
-  }
+    if (window.location.hostname === "www.lingdev.io.vn") {
+        window.location.href = "https://lingdev.io.vn" + window.location.pathname + window.location.search + window.location.hash;
+    }
 </script>
 
 <!DOCTYPE html>
 <html class="no-js ss-preload" lang="en">
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
     <meta charset="utf-8">
     <title>ling</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
+    <meta name="description" content="Portfolio of Ling, Unity Game Developer. Recent works, experience, and contact.">
+    <meta name="author" content="LingDev">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS
-    ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- favicons
-    ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
 </head>
 
 <body id="top">
+    <div id="preloader"><div id="loader"></div></div>
 
-
-    <!-- # preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-        </div>
-    </div>
-
-
-    <!-- # page wrap
-    ================================================== -->
     <div class="s-pagewrap">
-
         <div class="circles">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span><span></span><span></span>
         </div>
 
-
-        <!-- ## site header 
-        ================================================== -->
         <header class="s-header">
-
             <div class="header-mobile">
                 <span class="mobile-home-link"><a href="index.html">ling.</a></span>
                 <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
@@ -77,415 +46,306 @@
                     </ul>
                 </nav>
             </div>
+        </header>
 
-        </header> <!-- end s-header -->
-
-
-        <!-- ## main content
-        ==================================================- -->
         <main class="s-content">
-
-
-            <!-- ### intro
-            ================================================== -->
             <section id="intro" class="s-intro target-section">
-
                 <div class="row intro-content wide">
-
                     <div class="column">
-                        <div class="text-pretitle with-line">
-                            Hello World
-                        </div>
-
+                        <div class="text-pretitle with-line">Hello World</div>
                         <h1 class="text-huge-title">
                             I am Ling, <br>
-                            A Game Developer <br>
-                            Crafting experiences <br>
-                            with Unity. <br>
+                            A Unity Game Developer <br>
+                            Crafting interactive experiences <br>
+                            with clean and polished gameplay. <br>
                         </h1>
                     </div>
-
                     <ul class="intro-social">
-                        <li><a href="#0">LinkedIn</a></li>
+                        <li><a href="#contact" title="Get in touch">LinkedIn</a></li>
                     </ul>
-
-                </div> <!-- end intro content -->
-
-                <a href="#about" class="intro-scrolldown smoothscroll">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+                </div>
+                <a href="#about" class="intro-scrolldown smoothscroll" aria-label="Scroll to About">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" /></svg>
                 </a>
+            </section>
 
-            </section> <!-- end s-intro -->
-
-
-            <!-- ### about
-            ================================================== -->
             <section id="about" class="s-about target-section">
-
-
                 <div class="row about-info wide" data-animate-block>
-
                     <div class="column lg-6 md-12 about-info__pic-block">
-                        <img src="images/about-photo.jpg" 
-                             srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x" alt="" class="about-info__pic" data-animate-el>
+                        <img src="images/about-photo.jpg"
+                             srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x"
+                             alt="Ling - Unity Game Developer" class="about-info__pic" data-animate-el>
                     </div>
 
                     <div class="column lg-6 md-12">
                         <div class="about-info__text">
-
-                            <h2 class="text-pretitle with-line" data-animate-el>
-                                About
-                            </h2>
-                            <p class="attention-getter" data-animate-el>
-                                I’m a Unity game developer with over 2 years of experience,
-                                passionate about crafting engaging gameplay systems and delivering polished player experiences.
-                                I thrive in collaborative environments and enjoy solving technical challenges to bring creative visions to life.
+                            <h2 class="text-pretitle with-line">About</h2>
+                            <p class="attention-getter">
+                                I'm a Unity Game Developer with 2+ years of experience building gameplay systems,
+                                UI/UX, and internal tools that support smooth production pipelines.
+                                I love crafting polished player experiences, solving technical challenges,
+                                and writing clean, scalable code. I enjoy collaborating with teams to turn creative ideas into fully playable features.
                             </p>
-                                <a href="/CV.pdf" download="CV_lingdev.pdf" class="btn btn--medium u-fullwidth" data-animate-el>
-                                  Download CV
-                                </a>
+                            <a href="/CV.pdf" download="CV_lingdev.pdf" class="btn btn--medium u-fullwidth" data-animate-el>
+                                Download CV
+                            </a>
                         </div>
                     </div>
-                </div> <!-- about-info -->
-
+                </div>
 
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
-
-                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
-
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>UI/UX Development</li>
+                        <h2 class="text-pretitle">Expertise</h2>
+                        <ul class="skills-list h1">
                             <li>Gameplay Programming</li>
+                            <li>UI/UX Development</li>
                             <li>Tool Development</li>
                             <li>Game Architecture</li>
                             <li>Performance Optimization</li>
                             <li>Team Collaboration</li>
                         </ul>
-
-                    </div>
-                </div> <!-- end about-expertise -->
-
-
-                <div class="row about-timelines" data-animate-block>
-
+                </div>
+                <div class="row about-timelines" data-animate-block">
                     <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Experience
-                        </h2>
-
+                        <h2 class="text-pretitle" data-animate-el>Experience</h2>
                         <div class="timeline" data-animate-el>
-
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h4 class="timeline__title">OneUniverse VN</h3>
+                                    <h4 class="timeline__title">OneUniverse VN</h4>
                                     <h5 class="timeline__meta">Game Programmer</h5>
                                     <p class="timeline__timeframe">January 2023 - June 2025</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Worked on turn-based RPGs, gacha mechanics, UI reskinning, and FPS prototypes <br>
-                                       Experienced in rapid prototyping and feature implementation across multiple projects.
+                                    <p>
+                                        Developed systems for turn-based RPG gameplay, implemented gacha mechanics,
+                                        battle UI, effect handling, and animation workflows.
+                                        Experienced in rapid prototyping for FPS concepts, UI reskins, and feature experimentation.
+                                        Integrated game data through ScriptableObjects and backend APIs.
+                                        Collaborated with designers to refine combat balance and character synergy.
                                     </p>
                                 </div>
                             </div>
-    
+
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h4 class="timeline__title">Mola Interative</h4>
+                                    <h4 class="timeline__title">Mola Interactive</h4>
                                     <h5 class="timeline__meta">Game Operation</h5>
                                     <p class="timeline__timeframe">June 2022 - December 2022</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Player behavior analysis, basic data reporting, and community support.</p>
-                                </div>
-                            </div>
-    
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Education
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">University of Transport HCMC</h3>
-                                    <h5 class="timeline__meta">Computer Networks and Data Communications</h5>
-                                    <p class="timeline__timeframe">October 2020 - present</p>
-                                </div>
-                                <div class="timeline__desc">
                                     <p>
-                                        Gained a strong foundation in computer systems, networking, and data transmission. <br>
-                                        Applied technical knowledge to real-time systems and interactive applications, later transitioning into game development.
+                                        Analyzed player behavior, created performance reports, and supported community operations.
+                                        Assisted with basic QA and user feedback processing.
                                     </p>
                                 </div>
                             </div>
-    
+                        </div>
+                    </div>
+
+                    <div class="column lg-6 tab-12">
+                        <h2 class="text-pretitle" data-animate-el>Education</h2>
+                        <div class="timeline" data-animate-el>
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">University of Transport HCMC</h4>
+                                    <h5 class="timeline__meta">Computer Networks and Data Communications</h5>
+                                    <p class="timeline__timeframe">October 2020 - present</p>
+                                    <p>
+                                        Built a strong foundation in computer systems, networking, and data transmission.
+                                        Applied this knowledge to real-time applications and interactive systems,
+                                        later transitioning into game development.
+                                    </p>
+                                </div>
+                            </div>
+
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
                                     <h4 class="timeline__title">Green Academy</h4>
-                                    <h5 class="timeline__meta">Game Developer</h5>
+                                    <h5 class="timeline__meta">Game Development</h5>
                                     <p class="timeline__timeframe">November 2021 - April 2023</p>
-                                </div>
-                                <div class="timeline__desc">
                                     <p>
-                                        Self-learned Unity and C# programming during university to pursue game development.<br>
-                                        Built small projects to practice gameplay mechanics and UI systems.
+                                        Self-studied Unity and C# alongside university.
+                                        Developed small projects to practice gameplay mechanics and UI system design.
                                     </p>
                                 </div>
                             </div>
-    
-                        </div> <!-- end timeline -->
-                        
-                    </div> <!-- end column -->
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-
-                </div> <!-- end about-timelines -->
-
-            </section> <!-- end s-about -->
-
-
-            <!-- ### works
-            ================================================== -->
             <section id="works" class="s-works target-section">
-
-
                 <div class="row works-portfolio">
-
                     <div class="column lg-12" data-animate-block>
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Recent Works
-                        </h2>
+                        <h2 class="text-pretitle" data-animate-el>Recent Works</h2>
                         <p class="h1" data-animate-el>
                             Here are some of my favorite projects I have done lately. Feel free to check them out.
                         </p>
-    
-                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
 
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-02">
                                     <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/monstertown.png" 
-                                             srcset="images/portfolio/monstertown.png 1x" alt="">
+                                        <img src="images/portfolio/monstertown.png"
+                                             srcset="images/portfolio/monstertown.png 1x"
+                                             alt="Monster Town - Puzzle Game">
                                     </div>
-                                    
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Puzzle
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Monster Town.
-                                        </div>
+                                        <div class="folio-list__item-cat">Puzzle</div>
+                                        <div class="folio-list__item-title">Monster Town.</div>
                                     </div>
                                 </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
+                                <a class="folio-list__proj-link" href="https://example.com/monster-town" target="_blank" rel="noopener" title="Project link">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
                                 </a>
-                            </li> <!--end folio-list__item -->
+                            </li>
 
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-03">
                                     <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/champions-arena.jpg" 
-                                             srcset="images/portfolio/champions-arena.jpg 1x" alt="">
+                                        <img src="images/portfolio/champions-arena.jpg"
+                                             srcset="images/portfolio/champions-arena.jpg 1x"
+                                             alt="Champions Arena - Turn-based RPG">
                                     </div>
-                                    
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Turn base
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Champions Arena.
-                                        </div>
+                                        <div class="folio-list__item-cat">Turn-based</div>
+                                        <div class="folio-list__item-title">Champions Arena.</div>
                                     </div>
                                 </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
+                                <a class="folio-list__proj-link" href="https://play.google.com/store/apps/details?id=com.galagames.championsarena&pcampaignid=web_share" target="_blank" rel="noopener" title="Project link">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
                                 </a>
-                            </li> <!--end folio-list__item -->
+                            </li>
 
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-01">
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/character.png"
-                                             srcset="images/portfolio/character.png 1x"  alt="">
+                                             srcset="images/portfolio/character.png 1x"
+                                             alt="Tile Match Game">
                                     </div>
-                                    
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Puzzle
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Tile Match Game.
-                                        </div>
+                                        <div class="folio-list__item-cat">Puzzle</div>
+                                        <div class="folio-list__item-title">Tile Match Game.</div>
                                     </div>
                                 </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
+                                <a class="folio-list__proj-link" href="https://example.com/tile-match" target="_blank" rel="noopener" title="Project link">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
                                 </a>
-                            </li> <!--end folio-list__item -->
+                            </li>
+                        </ul>
 
-                        </ul> <!-- end folio-list -->
+                    </div>
 
-                    </div> <!-- end column -->
-
-
-                    <!-- Modal Templates Popup
-                    -------------------------------------------- -->
                     <div id="modal-01" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-Character.png" alt="">
-                
+                            <img src="images/portfolio/gallery/g-Character.png" alt="Tile Match Game screenshot">
                             <div class="modal-popup__desc">
                                 <h5>Personal Project | Puzzle Game</h5>
                                 <p>
-                                    A simple tile match puzzle game developed as a personal project to explore tile-matching mechanics and Unity UI handling. <br>
-                                    <b>Highlights:</b> <br>
-                                    Core gameplay: Collect 3 tile to clear them and score points <br>
-                                    Basic combo system and move limit <br>
-                                    Implemented board generation, tile swap logic, and match detection <br>
-                                    Built entirely in Unity using C# <br>
+                                    A tile-matching puzzle game built to explore match detection, tile swapping logic,
+                                    combo rules, and UI flow.
+                                    <br><b>Highlights:</b><br>
+                                    • Match 3 tiles to clear<br>
+                                    • Combo scoring system<br>
+                                    • Procedural board generation<br>
+                                    • Built entirely in Unity using C#
                                 </p>
-                                <ul class="modal-popup__cat">
-                                    <li>Puzzle</li>
-                                </ul>
+                                <ul class="modal-popup__cat"><li>Puzzle</li></ul>
                             </div>
-                
-                            <a href="https://drive.google.com/file/d/1C9mO98V-SotFw4cI3Kfp8jffAGXOxD3z/view?usp=drive_link" class="modal-popup__details">Project link</a>
+                            <a href="https://drive.google.com/file/d/1C9mO98V-SotFw4cI3Kfp8jffAGXOxD3z/view?usp=drive_link" class="modal-popup__details" target="_blank" rel="noopener">Project link</a>
                         </div>
-                    </div> <!-- end modal -->
+                    </div>
 
                     <div id="modal-02" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-monstertown.png" alt="">
-                
+                            <img src="images/portfolio/gallery/g-monstertown.png" alt="Monster Town screenshot">
                             <div class="modal-popup__desc">
                                 <h5>Personal Project | Puzzle Game</h5>
                                 <p>
-                                    A simple Match-3 puzzle game developed as a personal project to explore tile-matching mechanics and Unity UI handling. <br>
-                                    <b>Highlights:</b> <br>
-                                    Core gameplay: match 3+ tiles to clear them and score points <br>
-                                    Basic combo system and move limit <br>
-                                    Implemented board generation, tile swap logic, and match detection <br>
-                                    Built entirely in Unity using C# <br>
+                                    A match-3 puzzle game focused on tile logic, combo handling, and smooth UX.
+                                    <br><b>Highlights:</b><br>
+                                    • Core gameplay: Match 3+ tiles<br>
+                                    • Combo + move limit system<br>
+                                    • Board generation + match detection<br>
+                                    • Built entirely with Unity and C#
                                 </p>
-                                <ul class="modal-popup__cat">
-                                    <li>Puzzle</li>
-                                </ul>
+                                <ul class="modal-popup__cat"><li>Puzzle</li></ul>
                             </div>
-                
-                            <a href="#0" class="modal-popup__details">Project link</a>
+                            <a href="https://example.com/monster-town" class="modal-popup__details" target="_blank" rel="noopener">Project link</a>
                         </div>
-                    </div> <!-- end modal -->
+                    </div>
 
                     <div id="modal-03" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-champions-arena.jpg" alt="">
-                
+                            <img src="images/portfolio/gallery/g-champions-arena.jpg" alt="Champions Arena screenshot">
                             <div class="modal-popup__desc">
-                                <h5> Company Project | Turn-Based RPG | Mobile/PC (Unity) </h5>
+                                <h5>Company Project | Turn-Based RPG | Mobile/PC (Unity)</h5>
                                 <p>
-                                    A competitive turn-based RPG featuring PvP and PvE modes, collectible heroes, and strategic team-building mechanics.<br>
-                                    <b>My Contributions:</b> 
-                                    Developed gacha system for hero acquisition. <br>
-                                    Built and maintained battle UI, animations, and effect handling. <br>
-                                    Integrated game data via scriptable objects and server APIs. <br>
-                                    Collaborated with game designers to balance combat and unit synergy. <br>
-                                    <b>Tech Used: </b>Unity (C#), DOTween, Addressables, Git, Firebase
+                                    A competitive turn-based RPG featuring team-building mechanics, PvP/PvE modes,
+                                    hero collection, and strategic combat.
+                                    <br><b>My Contributions:</b><br>
+                                    • Developed gacha system for hero acquisition<br>
+                                    • Built and maintained battle UI, effects, and animations<br>
+                                    • Integrated game data with ScriptableObjects + backend APIs<br>
+                                    • Collaborated with designers to refine combat balance<br>
+                                    <b>Tech Used:</b> Unity (C#), DOTween, Addressables, Git, Firebase
                                 </p>
-                                <ul class="modal-popup__cat">
-                                    <li>Turn-based RPG</li>
-                                </ul>
+                                <ul class="modal-popup__cat"><li>Turn-based RPG</li></ul>
                             </div>
-                
-                            <a href="https://play.google.com/store/apps/details?id=com.galagames.championsarena&pcampaignid=web_share" class="modal-popup__details">Project link</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.galagames.championsarena&pcampaignid=web_share" class="modal-popup__details" target="_blank" rel="noopener">Project link</a>
                         </div>
-                    </div> <!-- end modal -->
+                    </div>
+                </div>
+            </section>
 
-                </div> <!-- end works-portfolio -->
-
-            </section> <!-- end s-works -->
-
-
-            <!-- ### contact
-            ================================================== -->
             <section id="contact" class="s-contact target-section">
-
                 <div class="row contact-top">
                     <div class="column lg-12">
-                        <h2 class="text-pretitle">
-                            Get In Touch
-                        </h2>
-
+                        <h2 class="text-pretitle">Get In Touch</h2>
                         <p class="h1">
-                            I’d love to hear from you! Whether you have a question or just want to chat about game development, 
-                            Unity, or anything tech-related — feel free to drop me a message.
+                            I’d love to hear from you! Whether you have a question or want to chat about game development,
+                            Unity, or any tech-related idea — feel free to reach out.
                         </p>
                     </div>
-                </div> <!-- end contact-top -->
+                </div>
 
                 <div class="row contact-bottom">
                     <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
                         <h3 class="text-pretitle">Reach me at</h3>
                         <p class="contact-links">
-                            <a href="mailto:trlinh1211@gmail.com" class="mailtoui">Email: trlinh1211@gmail.com</a> <br>
-                            <a href="tel:+84 868125302">Phone: +84 868125302</a>
+                            <a href="mailto:trlinh1211@gmail.com" class="mailtoui">Email: trlinh1211@gmail.com</a><br>
+                            <a href="tel:+84868125302">Phone: +84 868125302</a>
                         </p>
                     </div>
                     <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
                         <h3 class="text-pretitle">Social</h3>
                         <ul class="contact-social">
-                            <li><a href="https://www.linkedin.com/in/linh-tr%E1%BA%A7n-39bb09241/">Likendin</a></li>
+                            <li><a href="https://www.linkedin.com/in/linh-tr%E1%BA%A7n-39bb09241/" target="_blank" rel="noopener">LinkedIn</a></li>
                         </ul>
                     </div>
                     <div class="column lg-4 md-12 contact-block">
                         <a href="mailto:trlinh1211@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
                     </div>
-                </div> <!-- end contact-bottom -->
+                </div>
+            </section>
+        </main>
 
-            </section> <!-- end contact -->
-
-        </main> <!-- end s-content -->
-
-
-        <!-- ## footer
-        ================================================== -->
         <footer class="s-footer">
-
             <div class="row">
                 <div class="column ss-copyright">
-                    <span>© Copyright Ling 2025</span> 
+                    <span>© Copyright Ling 2025</span>
                 </div>
-
                 <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                    <a class="smoothscroll" title="Back to Top" href="#top" aria-label="Back to top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" /></svg>
                     </a>
                 </div>
             </div>
+        </footer>
+    </div>
 
-        </footer> <!-- end s-footer -->
-
-    </div> <!-- end -s-pagewrap -->
-
-
-    <!-- Java Script
-    ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
 </body>
-
 </html>
-

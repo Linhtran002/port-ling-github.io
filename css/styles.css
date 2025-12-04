@@ -1993,7 +1993,7 @@ select:-webkit-autofill:focus {
 
 
 
-/* ===================================================================
+  /* ===================================================================
  * # BUTTONS
  *
  *
@@ -2909,14 +2909,14 @@ img.u-pull-left {
 
 
 
-/* ===================================================================
+ /* ===================================================================
  * # SITE HEADER
  *
  *
  * ------------------------------------------------------------------- */
 
 .s-header {
-    --box-shadow : 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06), 0 4px 4px rgba(0, 0, 0, 0.06), 0 8px 8px rgba(0, 0, 0, 0.06);
+    --box-shadow : 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06), 0 4px 4px rgba(0, 0, 0, 0.06), 0 8px 8px rgba(0, 0, 0.06);
     z-index      : 100;
     width        : 100%;
     position     : fixed;
@@ -3423,10 +3423,6 @@ img.u-pull-left {
  * ## about expertise
  * -------------------------------------------------------------------- */
 .about-expertise {
-    padding-top : calc(6 * var(--space));
-}
-
-.about-expertise {
     padding-top: calc(6 * var(--space));
 }
 
@@ -3498,7 +3494,7 @@ img.u-pull-left {
     font-weight   : 500;
     font-size     : var(--text-lg);
     margin-top    : 0;
-    margin-bottom : var(--vspace-0_125);
+    margin-bottom : var(--vspace-0_25);
 }
 
 .timeline__meta {

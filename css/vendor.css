@@ -23,6 +23,7 @@
  *   @author Rose Pritchard
  * ------------------------------------------------------------------- */
 
+/* PrismJS */
 code[class*="language-"],
 pre[class*="language-"] {
     color           : #ccc;
@@ -45,7 +46,6 @@ pre[class*="language-"] {
 }
 
 /* Code blocks */
-
 pre[class*="language-"] {
     padding  : var(--vspace-0_5) 0 var(--vspace-1);
     margin   : 0;
@@ -58,7 +58,6 @@ pre[class*="language-"] {
 }
 
 /* Inline code */
-
 :not(pre)>code[class*="language-"] {
     padding     : .1em;
     white-space : normal;
@@ -336,9 +335,8 @@ pre[class*="language-"] {
 .swiper-button-next:after {
     font-family    : swiper-icons;
     font-size      : var(--swiper-navigation-size);
-    text-transform : none !important;
     letter-spacing : 0;
-    text-transform : none;
+    text-transform : none !important;
     font-variant   : initial;
     line-height    : 1;
 }
